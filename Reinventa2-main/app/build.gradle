@@ -66,3 +66,14 @@ dependencies {
     androidTestImplementation "android.arch.persistence.room:testing:$room_version"
 }
 
+plugins {
+  id "org.sonarqube" version "3.1.1"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "PabloAtahoneroGB_SonarCloudReinventa2"
+    property "sonar.organization", "pabloatahonerogb"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
